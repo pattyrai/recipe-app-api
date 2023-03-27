@@ -1,11 +1,11 @@
-name:Checks
-
-on:[push]
+---
+name: Checks
+on: [push]
 
 jobs: 
   test-lint:
     name: Test and lint
-    runs-on: ubuntu-20.0
+    runs-on: ubuntu-20.04
     steps: 
       - name: Login to Docker 
         uses: docker/login-action@v1
